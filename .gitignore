@@ -128,3 +128,23 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Arquivos de sistema e backups
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração de IDEs
+.vscode/
+.idea/
+
+# Node.js e dependências
+node_modules/
+npm-debug.log
+
+# Build files, caso venha a usar ferramentas de compilação
+dist/
+build/
+
+# Arquivos temporários
+*.tmp
+*.log
