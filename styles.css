@@ -23,6 +23,21 @@ header h1 {
     font-size: 2rem;
 }
 
+/* Navegação */
+nav {
+    text-align: center;
+    margin: 1rem 0;
+}
+nav a {
+    color: #ffd700;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
 /* Seções */
 section {
     margin: 2rem auto;
@@ -43,30 +58,69 @@ section p, section ul {
     margin: 0.5rem 0;
 }
 
-/* Links */
-a {
-    color: #ffd700; /* Links em amarelo */
-    text-decoration: none;
+/* Estilos para Card */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
-a:hover {
-    text-decoration: underline;
+
+.card {
+    background-color: #111; /* Fundo do card em preto */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+    color: #e5e5e5;
+    padding: 1rem;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin: 0.5rem 0 1rem;
+}
+
+.card a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 215, 0, 0.3); /* Aumenta a sombra no hover */
 }
 
 /* Contato */
 #contato ul {
     list-style-type: none;
+    padding: 0;
 }
+
 #contato ul li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+    font-size: 1.1em;
+    margin: 10px 0;
 }
+
+/* Ícones de Contato */
 .whatsapp-icon {
-    color: #25D366; /* Verde oficial do WhatsApp */
+    color: #25D366; /* Verde do WhatsApp */
     margin-right: 8px;
 }
+
 .email-icon {
-    color: #D44638; /* Vermelho oficial do Gmail */
+    color: #D44638; /* Vermelho do Gmail */
     margin-right: 8px;
 }
 
