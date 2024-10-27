@@ -1,62 +1,21 @@
-/* Estilos Globais */
-* {
-    margin: 0;
+/* Ícones de Contato */
+.whatsapp-icon {
+    color: #25D366; /* Verde do WhatsApp */
+    margin-right: 8px;
+}
+
+.email-icon {
+    color: #D44638; /* Vermelho do Gmail */
+    margin-right: 8px;
+}
+
+/* Ajustes gerais */
+ul {
+    list-style-type: none;
     padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #000; /* Fundo preto */
-    color: #fff; /* Texto principal branco */
 }
 
-/* Cabeçalho */
-header {
-    background-color: #ffd700; /* Amarelo dourado */
-    color: #000; /* Texto preto */
-    text-align: center;
-    padding: 1.5rem 0;
-}
-header h1 {
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-}
-
-/* Seções */
-section {
-    margin: 2rem auto;
-    padding: 1.5rem;
-    width: 90%;
-    max-width: 800px;
-    background: #111; /* Fundo cinza escuro para contraste */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); /* Sombra amarela */
-}
-section h2 {
-    color: #ffd700; /* Títulos em amarelo */
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-}
-section p, section ul {
-    color: #e5e5e5; /* Texto em cinza claro */
-    margin: 0.5rem 0;
-}
-
-/* Links */
-a {
-    color: #ffd700; /* Links em amarelo */
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #111; /* Fundo do rodapé preto escuro */
-    color: #ffd700; /* Texto do rodapé em amarelo */
-    font-size: 0.9rem;
+ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
 }
