@@ -17,7 +17,7 @@
             <a href="index.html">Home</a> <!-- Link para a página inicial -->
             <a href="about.html">Sobre</a> <!-- Link para a página sobre -->
             <a href="projects.html">Projetos</a> <!-- Link para a página de projetos -->
-            <a href="#blog">Blog</a> <!-- Âncora para a seção "Blog" na página inicial -->
+            <a href="blog.html">Blog</a> <!-- Link para a página do blog -->
             <a href="contact.html">Contato</a> <!-- Link para a página de contato -->
         </nav> <!-- Fim da navegação -->
     </header> <!-- Fim do cabeçalho -->
@@ -25,26 +25,32 @@
     <!-- Contato -->
     <section id="contato"> <!-- Seção de contato -->
         <h2>Contato</h2> <!-- Título da seção -->
-        <form action="enviar.php" method="post"> <!-- Início do formulário -->
-            <label for="nome">Nome:</label> <!-- Rótulo para o campo nome -->
+        <ul> <!-- Início da lista de contatos -->
+            <li><i class="fab fa-whatsapp whatsapp-icon"></i>WhatsApp: <a href="https://wa.me/5511930048795" target="_blank">11 93004-8795</a></li> <!-- WhatsApp -->
+            <li><i class="fas fa-envelope email-icon"></i>E-mail: <a href="mailto:erica.viana.soares@gmail.com">erica.viana.soares@gmail.com</a></li> <!-- E-mail -->
+        </ul> <!-- Fim da lista de contatos -->
+
+        <h2>Redes Sociais</h2> <!-- Subtítulo para redes sociais -->
+        <p>Conecte-se comigo através das minhas redes sociais:</p> <!-- Texto informativo -->
+        <ul> <!-- Início da lista de redes sociais -->
+            <li><i class="fab fa-github"></i> <a href="https://github.com/ericaviana12" target="_blank">GitHub</a></li> <!-- Link para o GitHub -->
+            <li><i class="fab fa-linkedin"></i> <a href="https://br.linkedin.com/in/erica-viana-938a37bb" target="_blank">LinkedIn</a></li> <!-- Link para o LinkedIn -->
+        </ul> <!-- Fim da lista de redes sociais -->
+
+        <h2>Formulário de Contato</h2> <!-- Título do formulário de contato -->
+        <form action="enviar.php" method="post" class="contact-form"> <!-- Início do formulário -->
+            <label for="nome">Nome:</label> <!-- Rótulo para o campo de nome -->
             <input type="text" id="nome" name="nome" required> <!-- Campo de entrada para nome -->
             
-            <label for="email">E-mail:</label> <!-- Rótulo para o campo e-mail -->
+            <label for="email">E-mail:</label> <!-- Rótulo para o campo de e-mail -->
             <input type="email" id="email" name="email" required> <!-- Campo de entrada para e-mail -->
             
-            <label for="mensagem">Mensagem:</label> <!-- Rótulo para o campo mensagem -->
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea> <!-- Área de texto para mensagem -->
+            <label for="mensagem">Mensagem:</label> <!-- Rótulo para o campo de mensagem -->
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea> <!-- Área de texto para a mensagem -->
             
             <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
         </form> <!-- Fim do formulário -->
         
-        <h3>Redes Sociais</h3> <!-- Título das redes sociais -->
-        <ul> <!-- Início da lista de redes sociais -->
-            <li><a href="https://www.linkedin.com/in/seulinkedin" target="_blank">LinkedIn</a></li> <!-- Link para o LinkedIn -->
-            <li><a href="https://github.com/seu-github" target="_blank">GitHub</a></li> <!-- Link para o GitHub -->
-        </ul> <!-- Fim da lista de redes sociais -->
-        
-        <p>Obrigado por visitar meu site! Estou ansiosa para ouvir de você.</p> <!-- Mensagem de agradecimento -->
     </section> <!-- Fim da seção de contato -->
 
     <!-- Rodapé -->
