@@ -1,49 +1,40 @@
-<!DOCTYPE html> <!-- Declara o tipo de documento como HTML -->
-<html lang="pt-BR"> <!-- Define o idioma da página como Português do Brasil -->
-<head> <!-- Início da seção de cabeçalho -->
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a responsividade da página -->
-    <title>Contato - Érica Viana</title> <!-- Define o título da página -->
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres da página como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a configuração de visualização para dispositivos móveis -->
+    <title>Contato - Érica Viana</title> <!-- Título da página -->
     <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo de estilos CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para o Font Awesome -->
-</head> <!-- Fim da seção de cabeçalho -->
-<body> <!-- Início do corpo da página -->
-    <header> <!-- Início do cabeçalho -->
-        <h1>Érica Viana</h1> <!-- Nome do desenvolvedor -->
-        <p>Desenvolvedora de Software | Banco de Dados | Gestão de Servidores</p> <!-- Descrição profissional -->
-        <nav> <!-- Início da navegação -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para a biblioteca de ícones Font Awesome -->
+</head>
+<body>
+    <!-- Seção de Cabeçalho -->
+    <header>
+        <h1>Érica Viana</h1> <!-- Nome da pessoa -->
+        <p>Desenvolvedora de Software | Banco de Dados | Gestão de Servidores</p> <!-- Descrição da profissão -->
+        <!-- Navegação -->
+        <nav>
             <a href="index.html">Home</a> <!-- Link para a página inicial -->
             <a href="about.html">Sobre</a> <!-- Link para a página sobre -->
             <a href="projects.html">Projetos</a> <!-- Link para a página de projetos -->
             <a href="contact.html">Contato</a> <!-- Link para a página de contato -->
             <a href="blog.html">Blog</a> <!-- Link para a página do blog -->
-        </nav> <!-- Fim da navegação -->
-    </header> <!-- Fim do cabeçalho -->
+        </nav>
+    </header>
 
-    <section id="contato"> <!-- Início da seção "Contato" -->
-        <h2>Entre em Contato</h2> <!-- Título da seção -->
-        <form action="submit_form.php" method="POST"> <!-- Início do formulário -->
-            <label for="nome">Nome:</label> <!-- Rótulo para o campo nome -->
-            <input type="text" id="nome" name="nome" required> <!-- Campo de entrada para o nome -->
-            
-            <label for="email">Email:</label> <!-- Rótulo para o campo email -->
-            <input type="email" id="email" name="email" required> <!-- Campo de entrada para o email -->
-            
-            <label for="mensagem">Mensagem:</label> <!-- Rótulo para o campo mensagem -->
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea> <!-- Campo de texto para a mensagem -->
-            
-            <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
-        </form> <!-- Fim do formulário -->
-        
-        <h3>Redes Sociais</h3> <!-- Título da subseção -->
-        <ul> <!-- Início da lista não ordenada -->
-            <li><a href="https://github.com/ericaviana12" target="_blank"><i class="fab fa-github"></i> GitHub</a></li> <!-- Link para o GitHub -->
-            <li><a href="https://www.linkedin.com/in/seu-perfil" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li> <!-- Link para o LinkedIn -->
-        </ul> <!-- Fim da lista não ordenada -->
-    </section> <!-- Fim da seção "Contato" -->
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2> <!-- Título da seção -->
+        <ul>
+            <li><i class="fab fa-whatsapp whatsapp-icon"></i>WhatsApp: <a href="https://wa.me/5511930048795" target="_blank">11 93004-8795</a></li> <!-- Informações de contato via WhatsApp -->
+            <li><i class="fas fa-envelope email-icon"></i>E-mail: <a href="mailto:erica.viana.soares@gmail.com">erica.viana.soares@gmail.com</a></li> <!-- Informações de contato via e-mail -->
+        </ul>
+        <h3>Redes Sociais</h3> <!-- Subtítulo para redes sociais -->
+        <p>Conecte-se comigo através das minhas redes sociais:</p> <!-- Texto informativo -->
+        <ul>
+            <li><a href="https://github.com/ericaviana12" target="_blank">GitHub</a></li> <!-- Link para o GitHub -->
+            <li><a href="https://br.linkedin.com/in/erica-viana-938a37bb" target="_blank">LinkedIn</a></li> <!-- Link para o LinkedIn -->
+        </ul>
+    </section>
 
-    <footer> <!-- Início do rodapé -->
-        <p>&copy; 2024 Érica Viana. Todos os direitos reservados.</p> <!-- Mensagem de direitos autorais -->
-    </footer> <!-- Fim do rodapé -->
-</body> <!-- Fim do corpo da página -->
-</html> <!-- Fim do documento HTML -->
+    <!-- Rodapé
