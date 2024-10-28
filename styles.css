@@ -1,12 +1,12 @@
 /* Estilos Globais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e bordas na largura e altura total dos elementos */
 }
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif; /* Define a fonte padrão do corpo */
+    line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
     background-color: #000; /* Fundo preto */
     color: #fff; /* Texto principal branco */
 }
@@ -15,120 +15,123 @@ body {
 header {
     background-color: #ffd700; /* Amarelo dourado */
     color: #000; /* Texto preto */
-    text-align: center;
-    padding: 1.5rem 0;
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    padding: 1.5rem 0; /* Adiciona espaçamento interno ao cabeçalho */
 }
 header h1 {
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
+    margin-bottom: 0.5rem; /* Espaço abaixo do título */
+    font-size: 2rem; /* Tamanho da fonte do título */
 }
 
 /* Navegação */
 nav {
-    text-align: center;
-    margin: 1rem 0;
+    background-color: #333; /* Cor de fundo do nav */
+    padding: 10px; /* Espaçamento interno do nav */
+    text-align: center; /* Centraliza o conteúdo dentro do nav */
 }
 nav a {
-    color: #ffd700;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    margin: 0 10px; /* Margem entre os links */
+    border-radius: 5px; /* Bordas arredondadas para um visual mais suave */
+    transition: background-color 0.3s; /* Animação suave para a cor de fundo ao passar o mouse */
 }
 nav a:hover {
-    text-decoration: underline;
+    background-color: #555; /* Cor de fundo ao passar o mouse */
 }
 
 /* Seções */
 section {
-    margin: 2rem auto;
-    padding: 1.5rem;
-    width: 90%;
-    max-width: 800px;
+    margin: 2rem auto; /* Margem superior/inferior de 2rem e centraliza horizontalmente */
+    padding: 1.5rem; /* Espaçamento interno das seções */
+    width: 90%; /* Largura das seções */
+    max-width: 800px; /* Largura máxima das seções */
     background: #111; /* Fundo cinza escuro para contraste */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); /* Sombra amarela */
+    border-radius: 8px; /* Bordas arredondadas das seções */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); /* Sombra amarela das seções */
 }
 section h2 {
     color: #ffd700; /* Títulos em amarelo */
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    margin-bottom: 0.5rem; /* Espaço abaixo do título da seção */
+    font-size: 1.5rem; /* Tamanho da fonte dos títulos das seções */
 }
 section p, section ul {
     color: #e5e5e5; /* Texto em cinza claro */
-    margin: 0.5rem 0;
+    margin: 0.5rem 0; /* Margem vertical das parágrafos e listas */
 }
 
 /* Estilos para Card */
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+    display: flex; /* Exibe os cards em flexbox */
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte se não houver espaço */
+    gap: 1rem; /* Espaço entre os cards */
+    justify-content: center; /* Centraliza os cards */
 }
 
 .card {
     background-color: #111; /* Fundo do card em preto */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
-    color: #e5e5e5;
-    padding: 1rem;
-    width: 280px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px; /* Bordas arredondadas do card */
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2); /* Sombra amarela do card */
+    color: #e5e5e5; /* Texto em cinza claro dentro do card */
+    padding: 1rem; /* Espaçamento interno do card */
+    width: 280px; /* Largura do card */
+    text-align: center; /* Centraliza o texto dentro do card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animação suave para transformação e sombra */
 }
 
 .card h3 {
-    color: #ffd700;
-    margin-bottom: 0.5rem;
+    color: #ffd700; /* Títulos dos cards em amarelo */
+    margin-bottom: 0.5rem; /* Espaço abaixo do título do card */
 }
 
 .card p {
-    margin: 0.5rem 0 1rem;
+    margin: 0.5rem 0 1rem; /* Margem vertical do parágrafo dentro do card */
 }
 
 .card a {
-    color: #ffd700;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: #ffd700; /* Cor do link dentro do card */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Define o peso da fonte do link como negrito */
+    transition: color 0.3s; /* Animação suave para a cor do link */
 }
 
 .card a:hover {
-    color: #fff;
+    color: #fff; /* Cor do link ao passar o mouse */
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Move o card para cima ao passar o mouse */
     box-shadow: 0 8px 16px rgba(255, 215, 0, 0.3); /* Aumenta a sombra no hover */
 }
 
 /* Contato */
 #contato ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
 }
 
 #contato ul li {
-    font-size: 1.1em;
-    margin: 10px 0;
+    font-size: 1.1em; /* Tamanho da fonte dos itens da lista de contato */
+    margin: 10px 0; /* Margem vertical dos itens da lista */
 }
 
 /* Ícones de Contato */
 .whatsapp-icon {
     color: #25D366; /* Verde do WhatsApp */
-    margin-right: 8px;
+    margin-right: 8px; /* Espaço à direita do ícone */
 }
 
 .email-icon {
     color: #D44638; /* Vermelho do Gmail */
-    margin-right: 8px;
+    margin-right: 8px; /* Espaço à direita do ícone */
 }
 
 /* Rodapé */
 footer {
-    text-align: center;
-    padding: 1rem 0;
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 1rem 0; /* Adiciona espaçamento interno ao rodapé */
     background-color: #111; /* Fundo do rodapé preto escuro */
     color: #ffd700; /* Texto do rodapé em amarelo */
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Tamanho da fonte do rodapé */
 }
