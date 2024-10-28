@@ -25,9 +25,10 @@ header h1 {
 
 /* Navegação */
 nav {
-    background-color: #000; /* Cor de fundo do nav */
+    background-color: #333; /* Cor de fundo do nav */
     padding: 10px; /* Espaçamento interno do nav */
     text-align: center; /* Centraliza o conteúdo dentro do nav */
+    border: 1px solid #000; /* Borda preta ao redor do menu de navegação */
 }
 nav a {
     color: #fff; /* Cor do texto dos links ajustada para branco */
