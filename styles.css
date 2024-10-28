@@ -30,7 +30,7 @@ nav {
     text-align: center; /* Centraliza o conteúdo dentro do nav */
 }
 nav a {
-    color: #fff; /* Cor do texto dos links */
+    color: #fff; /* Cor do texto dos links ajustada para branco */
     text-decoration: none; /* Remove o sublinhado dos links */
     padding: 10px 15px; /* Espaçamento interno dos links */
     margin: 0 10px; /* Margem entre os links */
