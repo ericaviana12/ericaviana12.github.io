@@ -1,40 +1,55 @@
-<!DOCTYPE html>
-<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML -->
+<html lang="pt-BR"> <!-- Define o idioma como português do Brasil -->
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres da página como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a configuração de visualização para dispositivos móveis -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização em dispositivos móveis -->
     <title>Contato - Érica Viana</title> <!-- Título da página -->
     <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo de estilos CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para a biblioteca de ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para o Font Awesome -->
 </head>
 <body>
     <!-- Seção de Cabeçalho -->
-    <header>
-        <h1>Érica Viana</h1> <!-- Nome da pessoa -->
-        <p>Desenvolvedora de Software | Banco de Dados | Gestão de Servidores</p> <!-- Descrição da profissão -->
+    <header> <!-- Início do cabeçalho -->
+        <h1>Érica Viana</h1> <!-- Título principal -->
+        <p>Desenvolvedora de Software | Banco de Dados | Gestão de Servidores</p> <!-- Descrição -->
         <!-- Navegação -->
-        <nav>
+        <nav> <!-- Início da navegação -->
             <a href="index.html">Home</a> <!-- Link para a página inicial -->
             <a href="about.html">Sobre</a> <!-- Link para a página sobre -->
             <a href="projects.html">Projetos</a> <!-- Link para a página de projetos -->
             <a href="#blog">Blog</a> <!-- Âncora para a seção "Blog" na página inicial -->
             <a href="contact.html">Contato</a> <!-- Link para a página de contato -->
-        </nav>
-    </header>
+        </nav> <!-- Fim da navegação -->
+    </header> <!-- Fim do cabeçalho -->
 
     <!-- Contato -->
-    <section id="contato">
+    <section id="contato"> <!-- Seção de contato -->
         <h2>Contato</h2> <!-- Título da seção -->
-        <ul>
-            <li><i class="fab fa-whatsapp whatsapp-icon"></i>WhatsApp: <a href="https://wa.me/5511930048795" target="_blank">11 93004-8795</a></li> <!-- Informações de contato via WhatsApp -->
-            <li><i class="fas fa-envelope email-icon"></i>E-mail: <a href="mailto:erica.viana.soares@gmail.com">erica.viana.soares@gmail.com</a></li> <!-- Informações de contato via e-mail -->
-        </ul>
-        <h3>Redes Sociais</h3> <!-- Subtítulo para redes sociais -->
-        <p>Conecte-se comigo através das minhas redes sociais:</p> <!-- Texto informativo -->
-        <ul>
-            <li><a href="https://github.com/ericaviana12" target="_blank">GitHub</a></li> <!-- Link para o GitHub -->
-            <li><a href="https://br.linkedin.com/in/erica-viana-938a37bb" target="_blank">LinkedIn</a></li> <!-- Link para o LinkedIn -->
-        </ul>
-    </section>
+        <form action="enviar.php" method="post"> <!-- Início do formulário -->
+            <label for="nome">Nome:</label> <!-- Rótulo para o campo nome -->
+            <input type="text" id="nome" name="nome" required> <!-- Campo de entrada para nome -->
+            
+            <label for="email">E-mail:</label> <!-- Rótulo para o campo e-mail -->
+            <input type="email" id="email" name="email" required> <!-- Campo de entrada para e-mail -->
+            
+            <label for="mensagem">Mensagem:</label> <!-- Rótulo para o campo mensagem -->
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea> <!-- Área de texto para mensagem -->
+            
+            <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+        </form> <!-- Fim do formulário -->
+        
+        <h3>Redes Sociais</h3> <!-- Título das redes sociais -->
+        <ul> <!-- Início da lista de redes sociais -->
+            <li><a href="https://www.linkedin.com/in/seulinkedin" target="_blank">LinkedIn</a></li> <!-- Link para o LinkedIn -->
+            <li><a href="https://github.com/seu-github" target="_blank">GitHub</a></li> <!-- Link para o GitHub -->
+        </ul> <!-- Fim da lista de redes sociais -->
+        
+        <p>Obrigado por visitar meu site! Estou ansiosa para ouvir de você.</p> <!-- Mensagem de agradecimento -->
+    </section> <!-- Fim da seção de contato -->
 
-    <!-- Rodapé
+    <!-- Rodapé -->
+    <footer> <!-- Início do rodapé -->
+        <p>&copy; 2024 Érica Viana. Todos os direitos reservados.</p> <!-- Texto do rodapé -->
+    </footer> <!-- Fim do rodapé -->
+</body>
+</html>
