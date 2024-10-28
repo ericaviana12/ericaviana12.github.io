@@ -1,82 +1,81 @@
-<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
-<html lang="pt-BR"> <!-- Inicia o elemento principal HTML e define o idioma da página como Português do Brasil -->
-<head> <!-- Cabeçalho do documento HTML, onde estão os metadados e recursos externos -->
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, suportando caracteres acentuados -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a largura da página para o tamanho da tela do dispositivo -->
-    <title>Érica Viana - Desenvolvedora</title> <!-- Define o título da página, exibido na aba do navegador -->
-    <link rel="stylesheet" href="styles.css"> <!-- Vincula o arquivo de estilo CSS externo, localizado em 'styles.css' -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Adiciona ícones da biblioteca Font Awesome via link externo -->
-</head> <!-- Fim do cabeçalho do documento -->
-<body> <!-- Início do corpo do documento HTML, onde o conteúdo principal é inserido -->
+<!DOCTYPE html> <!-- Declara o tipo do documento HTML --> 
+<html lang="pt-BR"> <!-- Define o idioma como português do Brasil --> 
+<head> <!-- Início da seção de cabeçalho do HTML --> 
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para dispositivos móveis --> 
+    <title>Érica Viana - Desenvolvedora</title> <!-- Define o título da página --> 
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para o Font Awesome para ícones --> 
+</head> <!-- Fim da seção de cabeçalho --> 
+<body> <!-- Início do corpo do HTML --> 
+    <!-- Seção de Cabeçalho --> 
+    <header> <!-- Início da seção de cabeçalho da página --> 
+        <h1>Érica Viana</h1> <!-- Título principal com o nome "Érica Viana" --> 
+        <p>Desenvolvedora de Software | Banco de Dados | Gestão de Servidores</p> <!-- Descrição de funções e especialidades --> 
+        <!-- Navegação --> 
+        <nav> <!-- Início da seção de navegação --> 
+            <a href="about.html">Sobre</a> <!-- Link para a página "Sobre" --> 
+            <a href="projects.html">Projetos</a> <!-- Link para a página "Projetos" --> 
+            <a href="#blog">Blog</a> <!-- Link âncora para a seção "Blog" nesta página --> 
+            <a href="contact.html">Contato</a> <!-- Link para a página "Contato" --> 
+        </nav> <!-- Fim da seção de navegação --> 
+    </header> <!-- Fim da seção de cabeçalho da página --> 
 
-    <!-- Seção de Cabeçalho -->
-    <header> <!-- Início da seção de cabeçalho da página -->
-        <h1>Érica Viana</h1> <!-- Título principal da página com o nome "Érica Viana" -->
-        <p>Desenvolvedora de Software | Banco de Dados | Gestão de Servidores</p> <!-- Descrição da profissão e áreas de atuação -->
-        <!-- Navegação -->
-        <nav> <!-- Início do menu de navegação -->
-            <a href="about.html">Sobre</a> <!-- Link para a página "about.html" na seção "Sobre" -->
-            <a href="projects.html">Projetos</a> <!-- Link para a página "projects.html" na seção "Projetos" -->
-            <a href="#blog">Blog</a> <!-- Link âncora para a seção "Blog" dentro da mesma página -->
-            <a href="contact.html">Contato</a> <!-- Link para a página "contact.html" na seção "Contato" -->
-        </nav> <!-- Fim do menu de navegação -->
-    </header> <!-- Fim da seção de cabeçalho -->
+    <!-- Seção Sobre --> 
+    <section id="sobre"> <!-- Início da seção "Sobre" com ID para âncora --> 
+        <h2>Sobre Mim</h2> <!-- Cabeçalho da seção "Sobre Mim" --> 
+        <p>Oi! Eu sou a Érica, estudante de Técnico de Informática no Senac Tatuapé e apaixonada por programação e desenvolvimento de software. Adoro explorar JavaScript, Python e Node.js, e tenho interesse em gestão de servidores e banco de dados.</p> <!-- Texto de apresentação --> 
+    </section> <!-- Fim da seção "Sobre" --> 
 
-    <!-- Seção Sobre -->
-    <section id="sobre"> <!-- Seção de conteúdo com o ID "sobre" para a seção "Sobre Mim" -->
-        <h2>Sobre Mim</h2> <!-- Título da seção "Sobre Mim" -->
-        <p>Oi! Eu sou a Érica, estudante de Técnico de Informática no Senac Tatuapé e apaixonada por programação e desenvolvimento de software. Adoro explorar JavaScript, Python e Node.js, e tenho interesse em gestão de servidores e banco de dados.</p> <!-- Parágrafo apresentando a autora e seu interesse em TI -->
-    </section> <!-- Fim da seção "Sobre Mim" -->
+    <!-- Projetos em Destaque --> 
+    <section id="projetos"> <!-- Início da seção "Projetos" com ID para âncora --> 
+        <h2>Projetos em Destaque</h2> <!-- Cabeçalho da seção "Projetos em Destaque" --> 
+        <div class="card-container"> <!-- Contêiner para os cartões de projetos --> 
+            <div class="card"> <!-- Início do primeiro cartão de projeto --> 
+                <h3>Senac-tat</h3> <!-- Título do projeto "Senac-tat" --> 
+                <p>Repositório com conteúdos e códigos do curso Técnico de Informática.</p> <!-- Descrição do projeto --> 
+                <a href="https://github.com/ericaviana12/Senac-tat" target="_blank">Ver Projeto</a> <!-- Link para o projeto no GitHub, abre em nova aba --> 
+            </div> <!-- Fim do primeiro cartão de projeto --> 
+            <div class="card"> <!-- Início do segundo cartão de projeto --> 
+                <h3>Aplicativo em Desenvolvimento</h3> <!-- Título do projeto "Aplicativo em Desenvolvimento" --> 
+                <p>Planejado para publicação na Google Play e App Store.</p> <!-- Descrição do aplicativo em desenvolvimento --> 
+                <a href="#">Saiba Mais</a> <!-- Link para mais informações, ainda não definido --> 
+            </div> <!-- Fim do segundo cartão de projeto --> 
+        </div> <!-- Fim do contêiner de cartões --> 
+    </section> <!-- Fim da seção "Projetos em Destaque" --> 
 
-    <!-- Projetos em Destaque -->
-    <section id="projetos"> <!-- Seção de conteúdo com o ID "projetos" para a seção de projetos em destaque -->
-        <h2>Projetos em Destaque</h2> <!-- Título da seção "Projetos em Destaque" -->
-        <div class="card-container"> <!-- Div que agrupa os cards de projetos em um container -->
-            <div class="card"> <!-- Card de projeto individual -->
-                <h3>Senac-tat</h3> <!-- Nome do projeto "Senac-tat" -->
-                <p>Repositório com conteúdos e códigos do curso Técnico de Informática.</p> <!-- Descrição do projeto -->
-                <a href="https://github.com/ericaviana12/Senac-tat" target="_blank">Ver Projeto</a> <!-- Link para o projeto no GitHub, aberto em uma nova aba -->
-            </div> <!-- Fim do card individual do projeto -->
-            <div class="card"> <!-- Segundo card de projeto individual -->
-                <h3>Aplicativo em Desenvolvimento</h3> <!-- Nome do projeto "Aplicativo em Desenvolvimento" -->
-                <p>Planejado para publicação na Google Play e App Store.</p> <!-- Descrição do projeto -->
-                <a href="#">Saiba Mais</a> <!-- Link de exemplo para mais informações (ainda não definido) -->
-            </div> <!-- Fim do segundo card de projeto -->
-        </div> <!-- Fim do container de cards de projetos -->
-    </section> <!-- Fim da seção "Projetos em Destaque" -->
+    <!-- Blog de Aprendizado --> 
+    <section id="blog"> <!-- Início da seção "Blog" com ID para âncora --> 
+        <h2>Blog de Aprendizado</h2> <!-- Cabeçalho da seção "Blog de Aprendizado" --> 
+        <div class="card-container"> <!-- Contêiner para os cartões de blog --> 
+            <div class="card"> <!-- Início do primeiro cartão de blog --> 
+                <h3>Programação</h3> <!-- Título da postagem "Programação" --> 
+                <p>Estudo de linguagens de programação, iniciado com foco em JavaScript e Python.</p> <!-- Descrição do conteúdo de programação --> 
+                <a href="https://github.com/ericaviana12/Programacao" target="_blank">Ler Mais</a> <!-- Link para o conteúdo de programação no GitHub, abre em nova aba --> 
+            </div> <!-- Fim do primeiro cartão de blog --> 
+            <div class="card"> <!-- Início do segundo cartão de blog --> 
+                <h3>JavaScript</h3> <!-- Título da postagem "JavaScript" --> 
+                <p>Tutorial abrangente sobre JavaScript, desde os fundamentos até conceitos avançados.</p> <!-- Descrição do conteúdo de JavaScript --> 
+                <a href="https://github.com/ericaviana12/JavaScript" target="_blank">Ler Mais</a> <!-- Link para o conteúdo de JavaScript no GitHub, abre em nova aba --> 
+            </div> <!-- Fim do segundo cartão de blog --> 
+        </div> <!-- Fim do contêiner de cartões --> 
+    </section> <!-- Fim da seção "Blog de Aprendizado" --> 
 
-    <!-- Blog de Aprendizado -->
-    <section id="blog"> <!-- Seção de conteúdo com o ID "blog" para o blog de aprendizado -->
-        <h2>Blog de Aprendizado</h2> <!-- Título da seção "Blog de Aprendizado" -->
-        <div class="card-container"> <!-- Div que agrupa os cards de posts do blog em um container -->
-            <div class="card"> <!-- Card de post individual do blog -->
-                <h3>Programação</h3> <!-- Nome do post "Programação" -->
-                <p>Estudo de linguagens de programação, iniciado com foco em JavaScript e Python.</p> <!-- Descrição do post -->
-                <a href="https://github.com/ericaviana12/Programacao" target="_blank">Ler Mais</a> <!-- Link para o post no GitHub, aberto em uma nova aba -->
-            </div> <!-- Fim do card individual do post -->
-            <div class="card"> <!-- Segundo card de post individual do blog -->
-                <h3>JavaScript</h3> <!-- Nome do post "JavaScript" -->
-                <p>Tutorial abrangente sobre JavaScript, desde os fundamentos até conceitos avançados.</p> <!-- Descrição do post -->
-                <a href="https://github.com/ericaviana12/JavaScript" target="_blank">Ler Mais</a> <!-- Link para o post no GitHub, aberto em uma nova aba -->
-            </div> <!-- Fim do segundo card de post do blog -->
-        </div> <!-- Fim do container de cards de posts do blog -->
-    </section> <!-- Fim da seção "Blog de Aprendizado" -->
+    <!-- Contato --> 
+    <section id="contato"> <!-- Início da seção "Contato" com ID para âncora --> 
+        <h2>Contato</h2> <!-- Cabeçalho da seção "Contato" --> 
+        <ul> <!-- Início da lista de contatos --> 
+            <li><i class="fab fa-whatsapp whatsapp-icon"></i>WhatsApp: <a href="https://wa.me/5511930048795" target="_blank">11 93004-8795</a></li> <!-- Item de contato via WhatsApp com link direto --> 
+            <li><i class="fas fa-envelope email-icon"></i>E-mail: <a href="mailto:erica.viana.soares@gmail.com">erica.viana.soares@gmail.com</a></li> <!-- Item de contato via e-mail --> 
+        </ul> <!-- Fim da lista de contatos --> 
+    </section> <!-- Fim da seção "Contato" --> 
 
-    <!-- Contato -->
-    <section id="contato"> <!-- Seção de conteúdo com o ID "contato" para a seção de contato -->
-        <h2>Contato</h2> <!-- Título da seção "Contato" -->
-        <ul> <!-- Lista não ordenada para os métodos de contato -->
-            <li><i class="fab fa-whatsapp whatsapp-icon"></i>WhatsApp: <a href="https://wa.me/5511930048795" target="_blank">11 93004-8795</a></li> <!-- Item de lista para contato via WhatsApp com link clicável -->
-            <li><i class="fas fa-envelope email-icon"></i>E-mail: <a href="mailto:erica.viana.soares@gmail.com">erica.viana.soares@gmail.com</a></li> <!-- Item de lista para contato via e-mail com link clicável -->
-        </ul> <!-- Fim da lista de métodos de contato -->
-    </section> <!-- Fim da seção "Contato" -->
+    <!-- Rodapé --> 
+    <footer> <!-- Início do rodapé --> 
+        <p>&copy; 2024 Érica Viana. Todos os direitos reservados.</p> <!-- Texto de copyright --> 
+    </footer> <!-- Fim do rodapé --> 
 
-    <!-- Rodapé -->
-    <footer> <!-- Seção de rodapé -->
-        <p>&copy; 2024 Érica Viana. Todos os direitos reservados.</p> <!-- Mensagem de copyright com o ano atual e nome da autora -->
-    </footer> <!-- Fim do rodapé -->
-
-    <!-- Link para o arquivo JavaScript -->
-    <script src="script.js"></script> <!-- Vincula o arquivo JavaScript externo 'script.js' para funcionalidades adicionais -->
-</body> <!-- Fim do corpo do documento HTML -->
+    <!-- Link para o arquivo JavaScript --> 
+    <script src="script.js"></script> <!-- Importa o arquivo de script JavaScript externo --> 
+</body> <!-- Fim do corpo do HTML --> 
 </html> <!-- Fim do documento HTML -->
